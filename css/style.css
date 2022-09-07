@@ -1,0 +1,232 @@
+/************ CSS Styles ************
+    Mainly reference Boyuan blog: https://boyuan.space/
+
+    Template Name: Boyuan - Portfolio Template
+    Author: cosmos-themes
+    version: 2.0
+    Copyright: 2021
+************************************/
+
+
+/*==================================
+        Table of Content
+        1. Body and Core Css
+        2. Preloader
+        3. Navbar
+        4. Banner Section
+        5. About Section
+        6. Services Section
+        7. Research Section
+        8. Portfolio Section
+        9. Blogs Section
+        10. Testimonial Section
+        11. Contact Form Section
+        12. Footer
+        13. Blogs Page
+        14. Single Blog Page
+        15. Mobile Responsive
+==================================*/
+
+
+/*============ 1. Body and Core Css ============*/
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 4;
+    margin: 4;
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #222;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+}
+
+body {
+    font-family: "Raleway", san-serif;
+    position: relative;
+    font-size: 16px;
+    line-height: 1.65;
+    color: #484848;
+    -webkit-font-smoothing: antialiased;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.65;
+    font-family: "Open Sans", sans-serif;
+}
+
+span {
+    display: inline-block;
+}
+
+
+/*===========Margin And Paddings============*/
+.pt-100 {
+    padding-top: 100px !important;
+}
+
+.pb-70 {
+    padding-bottom: 70px !important;
+}
+/* portfolio */
+section.portfolio .portfolio-filter {
+    margin-bottom: 40px;
+}
+
+section.portfolio .portfolio-filter ul li {
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 20px;
+    color: #222;
+    position: relative;
+    font-family: "Raleway", san-serif;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+section.portfolio .portfolio-filter ul li:last-child {
+    margin-right: 0;
+}
+
+section.portfolio .portfolio-filter ul li:last-child:before {
+    visibility: hidden;
+}
+
+section.portfolio .portfolio-filter ul li:before {
+    content: "/";
+    position: absolute;
+    right: -15px;
+    font-weight: 400;
+}
+
+section.portfolio .portfolio-filter ul li.sel-item {
+    font-weight: 600;
+}
+
+section.portfolio .portfolio-items .item {
+    margin-bottom: 30px;
+}
+
+section.portfolio .portfolio-items .item .item-content {
+    position: relative;
+    overflow: hidden;
+}
+
+section.portfolio .portfolio-items .item .item-content:before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    opacity: 0;
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    -webkit-transition: .5s all ease;
+    -o-transition: .5s all ease;
+    transition: .5s all ease;
+}
+
+section.portfolio .portfolio-items .item .item-content:hover:before {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+
+section.portfolio .portfolio-items .item .item-content .item-overlay {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+section.portfolio .portfolio-items .item .item-content .item-overlay h6 {
+    text-transform: uppercase;
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+    opacity: 0;
+    -webkit-transition: .5s all ease;
+    -o-transition: .5s all ease;
+    transition: .5s all ease;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+section.portfolio .portfolio-items .item .item-content .item-overlay p {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+    opacity: 0;
+    -webkit-transition: .5s all ease;
+    -o-transition: .5s all ease;
+    transition: .5s all ease;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+section.portfolio .portfolio-items .item .item-content .item-overlay .icons .icon {
+    -webkit-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    transform: translateY(10px);
+    -webkit-transition: .5s all ease;
+    -o-transition: .5s all ease;
+    transition: .5s all ease;
+    opacity: 0;
+}
+
+section.portfolio .portfolio-items .item .item-content .item-overlay .icons .icon a {
+    display: inline-block;
+    -webkit-transition: .5s all ease;
+    -o-transition: .5s all ease;
+    transition: .5s all ease;
+    height: 40px;
+    width: 40px;
+    margin-top: 30px;
+    background-color: #fff;
+    font-size: 22px;
+    line-height: 40px;
+    color: #222;
+    -webkit-border-radius: 20%;
+    border-radius: 20%;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
+}
+
+section.portfolio .portfolio-items .item .item-content:hover .item-overlay h6,
+section.portfolio .portfolio-items .item .item-content:hover .item-overlay p,
+section.portfolio .portfolio-items .item .item-content:hover .item-overlay .icons .icon {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+}
