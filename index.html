@@ -3,12 +3,7 @@
 
 <head style="font-family: sans-serif">
   <title>Junnan Jinag's Homepage</title>
-  <link rel="stylesheet" type="text/css" href="jiang.css">
-
-  <!-- <link href="https://people.csail.mit.edu/boyuanc//images/favicon.ico" rel="icon" type="image/png"> -->
-
-  <!--Font Awesome css-->
-  <link rel="stylesheet" href="./css/bootstrap.css">
+  <!-- <link rel="stylesheet" type="text/css" href="jiang.css"> -->
 
   <!--Bootstrap css-->
   <link rel="stylesheet" href="./css/bootstrap.css">
@@ -17,24 +12,16 @@
   <link rel="stylesheet" href="./css/owl.carousel.min.css">
   <link rel="stylesheet" href="./css/owl.theme.default.min.css">
 
-  
-
-  <!-- Google Fonts -->
-  <link href="./css/css" rel="stylesheet">
-
   <!--Site Main Style css-->
   <link rel="stylesheet" href="./css/style.css">
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-B1GX1SDN9Q"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-B1GX1SDN9Q');
-  </script>
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <script type="text/javascript" src="./js/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.magnific-popup.min.js"></script>
+  <script type="text/javascript" src="./js/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="./js/scrollIt.min.js"></script>
+  <script type="text/javascript" src="./js/isotope.pkgd.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.stellar.js"></script>
+  <script type="text/javascript" src="./js/main.js"></script>
 </head>
 
 
@@ -66,17 +53,24 @@
   <table style="margin: 10px 00px">
     <tr>
       <td style="padding:0 0px 0px 10px;"><a href="https://github.com/elevenjiang1"><img src="images/github.png"
-            width=70px, height=70px /></a>
+            style="width: 70px; height: 70px;" /></a>
       </td>
       <td style="padding:0 10px 0px 10px;"><a href="https://www.youtube.com/channel/UCVz7Am0qZOhXDOiY-_waL_g"><img
-            src="images/youtube.png" width=70px, height=70px /></a>
+            src="images/youtube.png" style="width: 70px; height: 70px;" /></a>
       </td>
       <td style="padding:0 20px 0px 10px;"><a href="https://space.bilibili.com/85386038"><img src="images/bilibili.webp"
-            width=70px, height=70px /></a>
+        style="width: 70px; height: 70px;" /></a>
       </td>
 
     </tr>
   </table>
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+
 
 
   <h2>Projects</h2>
@@ -122,7 +116,7 @@
           </ul>
       </tr>
       <tr>
-        <td style="width: 200px;padding:0 15px 40px 0;"><img src="images/RM-BigPicture.png" width=256px, /></td>
+        <td style="width: 200px;padding:0 15px 40px 0;"><img src="images/RM-BigPicture-All.png" width=256px, /></td>
         <td style="vertical-align:top;font-size: 15px"><b>Robotmaster Competition</b> <a
             href="https://www.bilibili.com/video/BV1Sf4y117MZ">[video]</a>
           <a href="https://github.com/elevenjiang1/RoboMaster2020-OnePointFive">[code]</a><br />
@@ -144,7 +138,6 @@
       </tr>
     </tbody>
   </table>
-
     <!--Portfolio Section Start-->
     <section class="portfolio pt-100 pb-70" data-scroll-index="3">
       <div class="container">
@@ -169,9 +162,9 @@
             <div class="item-content">
               <img src="./images/UltrasoundPuncture.png" alt="">
               <div class="item-overlay">
-                <h6>Ultrasound Puncture Robot</h6>
+                <h6>Ultrasound-Puncture Robot</h6>
                 <p>
-                  From polishing and peg in hole to ultrasound scanning and puncture needle puncture.
+                  From polishing and peg in hole to ultrasound scanning and puncture-needle penetration.
                 </p>
               </div>
             </div>
@@ -183,7 +176,7 @@
               <div class="item-overlay">
                 <h6>First Grasping System</h6>
                 <p>
-                  The first grasping system I have built. 5 years I have spent and see the challenge in grasping.
+                  The first grasping platform I built, I didn't know the difficulty of grasping until I actually started and expected the robot to grasp various objects.
                 </p>
               </div>
             </div>
@@ -193,9 +186,33 @@
             <div class="item-content">
               <img src="./images/ShadowHand.jpg" alt="">
               <div class="item-overlay">
-                <h6>ShadowHand robot</h6>
+                <h6>ShadowHand</h6>
                 <p>
-                  ShadowHand, Realsense, UR10. Maybe what people can imitate themselves.
+                  ShadowHand, Realsense, UR10, although there is still a big gap, at least they look like human in shape.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--Portfolio Item-->
+          <div class="col-lg-4 col-md-6 item robot" style="position: absolute; left: 300px; top: 400px;">
+            <div class="item-content">
+              <img src="./images/Car.png" alt="">
+              <div class="item-overlay">
+                <h6>Intelligent Car Race</h6>
+                <p>
+                  National University Students Intelligent Car Race, we control the car with PID and Deep Learning. Of course PID is better ^_^;
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--Portfolio Item-->
+          <div class="col-lg-4 col-md-6 item robot" style="position: absolute; left: 600px; top: 800px;">
+            <div class="item-content">
+              <img src="./images/PickApple.png" alt="">
+              <div class="item-overlay">
+                <h6>Picking Apple Robot</h6>
+                <p>
+                  The first project with a robot arm! The first independent project! Including perception, planning and execution, pain but joy, and learn a lot!
                 </p>
               </div>
             </div>
@@ -207,31 +224,7 @@
               <div class="item-overlay">
                 <h6>AllegroHand</h6>
                 <p>
-                  AllegroHand, which is easy to use but less dexterous than ShadowHand.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!--Portfolio Item-->
-          <div class="col-lg-4 col-md-6 item robot" style="position: absolute; left: 300px; top: 400px;">
-            <div class="item-content">
-              <img src="./images/Car.png" alt="">
-              <div class="item-overlay">
-                <h6>Car Competition</h6>
-                <p>
-                  Competition!
-                </p>
-              </div>
-            </div>
-          </div>
-          <!--Portfolio Item-->
-          <div class="col-lg-4 col-md-6 item robot" style="position: absolute; left: 600px; top: 400px;">
-            <div class="item-content">
-              <img src="./images/PickApple.png" alt="">
-              <div class="item-overlay">
-                <h6>Picking Apple Robot</h6>
-                <p>
-                  The first project with AUBO5, containing perception, planning, actuation.
+                  AllegroHand, the first dexterous hand I've seen, easy to use, stable, fast speed, but not as dexterous as the ShadowHand.
                 </p>
               </div>
             </div>
@@ -243,7 +236,7 @@
               <div class="item-overlay">
                 <h6>Sawyer</h6>
                 <p>
-                  The robot which atract me to go into the field of robot.
+                  One night in the last year of high school, this robot drew me into the field of robotics!
                 </p>
               </div>
             </div>
@@ -256,7 +249,7 @@
               <div class="item-overlay">
                 <h6>XBotPark</h6>
                 <p>
-                  XbotPark, a great place for creators, lead by Zeli Xiang!
+                  A great place for entrepreneurs, begin to think about what robot can help people, led by Zeli Xiang!
                 </p>
               </div>
             </div>
@@ -264,11 +257,11 @@
           <!--Portfolio Item-->
           <div class="col-lg-4 col-md-6 item team" style="position: absolute; left: 380px; top: 0px; display: none;">
             <div class="item-content">
-              <img src="./images/RoboticsX.jpg" alt="">
+              <img src="./images/RoboticsX.png" alt="">
               <div class="item-overlay">
-                <h6>Tencent RoboticsX</h6>
+                <h6>Tecent RoboticsX</h6>
                 <p>
-                  A great place to see lots of robots, and all areas of robotic researchers!
+                  A great place to see many robots and robotics researchers in various fields!
                 </p>
               </div>
             </div>
@@ -280,19 +273,20 @@
               <div class="item-overlay">
                 <h6>RobotMaster</h6>
                 <p>
-                  OnePointFive team, though meet big challenges but with great friends!
+                  OnePointFive team, despite facing great challenges, but really grateful for the company of my teammates.
+                  Of course, this is also the start of the robotics dream
                 </p>
               </div>
             </div>
           </div>
           <!--Portfolio Item-->
-          <div class="col-lg-4 col-md-6 item travel" style="position: absolute; left: 0px; top: 0px; display: none;">
+          <div class="col-lg-40 col-md-60 item travel" style="position: absolute; left: 0px; top: 0px; display: none;">
             <div class="item-content">
               <img src="./images/TravelMap.jpg" alt="">
               <div class="item-overlay">
                 <h6>TravelMap</h6>
                 <p>
-                  Places I have been to.
+                  Places I have been~~
                 </p>
               </div>
             </div>
@@ -304,34 +298,6 @@
     </section>
     <!--Portfolio Section End-->
 
-        <!--Jquery js-->
-        <script src="./js/jquery.min.js"></script>
-        <!--Bootstrap js-->
-        <script src="./js/bootstrap.min.js"></script>
-        <!--Stellar js-->
-        <script src="./js/jquery.stellar.js"></script>
-        <!--Animated Headline js-->
-        <script src="./js/animated.headline.js"></script>
-        <!--Owl Carousel js-->
-        <script src="./js/owl.carousel.min.js"></script>
-        <!--ScrollIt js-->
-        <script src="./js/scrollIt.min.js"></script>
-        <!--Isotope js-->
-        <script src="./js/isotope.pkgd.min.js"></script>
-        <!--Magnific Popup js-->
-        <script src="./js/jquery.magnific-popup.min.js"></script>
-        <!--Site Main js-->
-        <script src="./js/main.js"></script>
-        <!--Hide unless clicked js-->
-        <script src="./js/hidebib.js"></script>
-    
-        <!--Hide paper abstract by default-->
-        <script xml:space="preserve">
-          hideblock("keypoint3D_abs");
-          hideblock("rpg_abs");
-          hideblock("sap_abs");
-        </script>
-
 
 
 </body>
@@ -341,7 +307,7 @@
 <br>
 <br>
 
-<!-- <p style="text-align: center;font-size: 12px">&copyJunnan Jiang. All rights reserved</p> -->
+<p style="text-align: center;font-size: 12px">&copyJunnan Jiang. All rights reserved</p>
 
 
 </html>
